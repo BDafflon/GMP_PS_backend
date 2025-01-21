@@ -1,0 +1,102 @@
+# Byte-compiled files
+*.py[cod]
+__pycache__/
+media/
+tmp/
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Si vous utilisez PyInstaller pour créer des exécutables :
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environnement virtuel
+venv/
+ENV/
+env/
+.venv/
+.env/
+env.bak/
+venv.bak/
+.env
+migrations/
+# Environnement virtuel Poetry
+.poetry/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Outils IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.kate-swp
+
+# Pyre type checker
+.pyre/
+
+# Mypy type checker
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Profiling data
+.prof
+.profraw
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+coverage.xml
+*.coveragerc
+
+# Pytest
+.cache/
+
+# Pyright
+pyrightconfig.json
+
+# Suppression des fichiers de log
+*.log
+
+# Suppression des fichiers temporaires
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Suppression des fichiers de test
+*.out
+*.err
+
+# Suppression des fichiers générés par des éditeurs
+*.~undo-tree~
