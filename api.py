@@ -957,7 +957,8 @@ def resultats(current_user):
         else:
             resultats = Resultat.query.filter_by(id_user=request.json.get('user'),id_dossier=request.json.get("dossier")["id"]).all()
         for r in resultats:
-            db.session.delete(r)
+            if r.id_user == current_user.id:
+                db.session.delete(r)
 
     db.session.commit()
     return jsonify([])
