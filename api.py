@@ -339,7 +339,8 @@ def registration_user(current_user):
 
 #------------------------ DOSSIER
 @app.route('/dossier/lecture/test', methods = ['GET'])
-def getDossierLecturetest():
+@token_required
+def getDossierLecturetest(current_user):
     dossier = Dossier.query.first()
     return send_file(dossier.url, mimetype=dossier.type, as_attachment=True)
 
